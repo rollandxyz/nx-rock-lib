@@ -1,0 +1,12 @@
+{
+  "name": "@nx-rock-packaged/rock-module",
+  "version": "0.0.2-alpha",
+  "main": "bundles/nx-rock-packaged-rock-module.umd.js",
+  "module": "esm5/nx-rock-packaged-rock-module.js",
+  "es2015": "esm2015/nx-rock-packaged-rock-module.js",
+  "typings": "nx-rock-packaged-rock-module.d.ts",
+  "metadata": "nx-rock-packaged-rock-module.metadata.json",
+  "dependencies": {
+    "tslib": "^1.7.1"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "file": "nx-rock-packaged-rock-module.js",
+  "sources": [
+    "ng://@nx-rock-packaged/rock-module/out/src/rock-module.module.ts",
+    "ng://@nx-rock-packaged/rock-module/out/src/x-table/x-table.component.ts"
+  ],
+  "sourcesContent": [
+    "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { XTableComponent } from './x-table/x-table.component';\n\n@NgModule({\n  imports: [CommonModule],\n  declarations: [XTableComponent],\n  exports:[XTableComponent]\n})\nexport class RockModuleModule {}\n",
+    "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-x-table',\n  template: `<table>\n  <tr>\n    <th>Company</th>\n    <th>Contact</th>\n    <th>Country</th>\n  </tr>\n  <tr>\n    <td>Alfreds Futterkiste</td>\n    <td>Maria Anders</td>\n    <td>Germany</td>\n  </tr>\n  <tr>\n    <td>Centro comercial Moctezuma</td>\n    <td>Francisco Chang</td>\n    <td>Mexico</td>\n  </tr>\n  <tr>\n    <td>Ernst Handel</td>\n    <td>Roland Mendel</td>\n    <td>Austria</td>\n  </tr>\n  <tr>\n    <td>Island Trading</td>\n    <td>Helen Bennett</td>\n    <td>UK</td>\n  </tr>\n  <tr>\n    <td>Laughing Bacchus Winecellars</td>\n    <td>Yoshi Tannamuri</td>\n    <td>Canada</td>\n  </tr>\n  <tr>\n    <td>Magazzini Alimentari Riuniti</td>\n    <td>Giovanni Rovelli</td>\n    <td>Italy</td>\n  </tr>\n</table>`,\n  styles: [`table{font-family:arial,sans-serif;border-collapse:collapse;width:100%}td,th{border:1px solid #ddd;text-align:left;padding:8px}tr:nth-child(even){background-color:#ddd}`]\n})\nexport class XTableComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit() {\n  }\n\n}\n"
+  ],
+  "names": [],
+  "mappings": ";;;ACAA;IA6CE;KAAiB;IAEjB,kCAAQ,GAAR;KACC;;;;IA9CH,EAAA,IAAA,EAAC,SAAS,EAAV,IAAA,EAAA,CAAW;gBACT,QAAQ,EAAE,aAAa;gBACvB,QAAQ,EAAE,8sBAoCH;gBACP,MAAM,EAAE,CAAC,0KAA0K,CAAC;aACrL,EAAD,EAAA;;;AD1CA;IAAA;;;;;IAIA,EAAA,IAAA,EAAC,QAAQ,EAAT,IAAA,EAAA,CAAU;gBACR,OAAO,EAAE,CAAC,YAAY,CAAC;gBACvB,YAAY,EAAE,CAAC,eAAe,CAAC;gBAC/B,OAAO,EAAC,CAAC,eAAe,CAAC;aAC1B,EAAD,EAAA;;;;;"
+}
